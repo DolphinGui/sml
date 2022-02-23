@@ -6,7 +6,7 @@
 #
 .PHONY: all doc clean test example
 CXX?=clang++
-CXXSTD?=c++14
+CXXSTD?=c++17
 
 ifneq (, $(findstring clang++, $(CXX)))
 	CXXFLAGS+=-std=$(CXXSTD) -Wall -Wextra -Werror -pedantic -pedantic-errors -I include -I .
